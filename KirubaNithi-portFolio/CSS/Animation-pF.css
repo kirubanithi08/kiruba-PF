@@ -1,0 +1,105 @@
+
+.name{
+   
+    opacity: 0;
+    animation: slideLeft 0.6s ease forwards;
+    animation-delay:0.7s; 
+}
+
+.section__text__p1{
+    opacity: 0;
+    animation: slideTop 0.6s ease forwards;
+    animation-delay:0.5s; 
+    
+}
+
+.section__text__p2{
+    opacity: 0;
+    animation: slideBottom 0.6s ease forwards;
+    animation-delay:0.5s; 
+
+}
+
+.btn {
+    opacity: 0;
+    animation: slideRight 0.6s ease forwards;
+    animation-delay:0.6s;
+    animation-delay: calc(0.2s*var(--i)); 
+}
+
+.social{
+opacity: 0;
+animation: slideTop 0.6s ease forwards;
+animation-delay: calc(0.2s*var(--i));
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* scroll bar */
+
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    background:rgb(53, 53, 53);
+   
+   
+}
+
+::-webkit-scrollbar-thumb{
+    background:rgb(162, 213, 213);
+    border-radius: 20px;
+    transition: all  0.3s ease;
+    
+    
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:azure ;
+    box-shadow:0 0 35px azure;
+}
+
